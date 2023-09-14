@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ordenar Nomes em Ordem Alfabética</title>
+</head>
+<body>
+    <script>
+        const nomes = ["Maria", "João", "Ana", "Carlos", "Bianca"];
+        for (let i = 0; i < nomes.length - 1; i++) {
+            for (let j = i + 1; j < nomes.length; j++) {
+                if (nomes[i] > nomes[j]) {
+                    const temp = nomes[i];
+                    nomes[i] = nomes[j];
+                    nomes[j] = temp;
+                }
+            }
+        }
+        console.log(nomes);
+    </script>
+</body>
+</html>
