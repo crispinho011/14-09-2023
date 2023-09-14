@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ordenar Números em Ordem Decrescente</title>
+</head>
+<body>
+    <script>
+        const numeros = [5, 2, 8, 1, 9];
+        let trocou;
+        do {
+            trocou = false;
+            for (let i = 0; i < numeros.length - 1; i++) {
+                if (numeros[i] < numeros[i + 1]) {
+                    const temp = numeros[i];
+                    numeros[i] = numeros[i + 1];
+                    numeros[i + 1] = temp;
+                    trocou = true;
+                }
+            }
+        } while (trocou);
+        console.log(numeros);
+    </script>
+</body>
+</html>
