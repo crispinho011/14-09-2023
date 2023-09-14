@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscar "abacaxi" em Matriz de Frutas</title>
+</head>
+<body>
+    <script>
+        const frutas = ["maçã", "banana", "abacaxi", "laranja", "uva"];
+        let encontrou = false;
+
+        for (let i = 0; i < frutas.length; i++) {
+            switch (frutas[i]) {
+                case "abacaxi":
+                    console.log("Encontrou o abacaxi!");
+                    encontrou = true;
+                    break;
+            }
+        }
+
+        if (!encontrou) {
+            console.log("Abacaxi não encontrado.");
+        }
+    </script>
+</body>
+</html>
